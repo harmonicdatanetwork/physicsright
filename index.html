@@ -19,7 +19,7 @@
 			});
 		});
 	
-		function send(query)() {
+		function send(query) {
 			var text = query;
 			$.ajax({
 				type: "POST",
@@ -51,7 +51,7 @@
 <body>
 	<div class = 'chatBox'>
 	</div>
-	<input id="input" type="text" style="width: 430px;"> <button onclick="send(query)()">Search</button>
+	<input id="input" type="text" style="width: 430px;"> <button onkeypress="send(query)()">Search</button>
 
 </body>
 </html>
